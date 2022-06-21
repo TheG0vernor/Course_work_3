@@ -6,14 +6,9 @@
 которые я указал, в следующих файлах:
 
 * run.py (пути импорта)<br>
-* posts/posts.py (пути импорта)
-* search/search.py (пути импорта)
 * logger.py (путь FileHandler)<br>
 * tests\test_api.py (пути импорта)<br>
 * tests\test_classes.py (пути импорта)<br>
-* classes\basic.py (пути к файлам в параметрах метода '__init__')<br>
-* classes\posts.py (путь импорта)<br>
-* classes\comments.py (путь импорта)<br>
+* classes\basic.py (пути к файлам в параметрах метода 'init')<br>
 
 Данные пути были указаны вынужденно, поскольку тестирование не работало при указании относительных путей.
-
