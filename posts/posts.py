@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
-from Cloud.My.Course_work_3.classes.posts import ClassPosts
-from Cloud.My.Course_work_3.classes.comments import ClassComments
+from ..classes.posts import ClassPosts
+from ..classes.comments import ClassComments
 
 posts_blueprint = Blueprint('posts_blueprint', __name__, template_folder='templates')
 

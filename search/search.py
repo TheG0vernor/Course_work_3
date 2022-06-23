@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, jsonify
-from Cloud.My.Course_work_3.classes.posts import ClassPosts
-from Cloud.My.Course_work_3.logger import logger_api
+from ..classes.posts import ClassPosts
+from ..logger import logger_api
 
 search_blueprint = Blueprint('search_blueprint', __name__, template_folder='templates')
 

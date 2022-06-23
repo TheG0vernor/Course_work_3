@@ -1,4 +1,4 @@
-from Cloud.My.Course_work_3.classes.basic import Basic
+from ..classes.basic import Basic
 
 
 class ClassComments(Basic):  # класс с методами, относящимися к комментариям

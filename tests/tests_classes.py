@@ -2,7 +2,6 @@ from Cloud.My.Course_work_3.classes.posts import ClassPosts
 from Cloud.My.Course_work_3.classes.comments import ClassComments
 
 
-
 class TestsClass:
 
     def testing_get_posts_all(self):
