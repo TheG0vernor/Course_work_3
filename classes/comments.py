@@ -1,4 +1,4 @@
-from ..classes.basic import Basic
+from classes.basic import Basic
 
 
 class ClassComments(Basic):  # класс с методами, относящимися к комментариям

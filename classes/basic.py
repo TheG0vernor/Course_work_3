@@ -1,8 +1,10 @@
 import json
 
+from constants import DATA_POSTS, DATA_COMMENTS
+
 
 class Basic:  # базовый класс
-    def __init__(self, path_posts='C:\Project_Python\Cloud\My\Course_work_3\data\data.json', username=None, query=None, pk=None, path_comments='C:\Project_Python\Cloud\My\Course_work_3\data\comments.json', post_id=None, len_comments=0):
+    def __init__(self, path_posts=DATA_POSTS, username=None, query=None, pk=None, path_comments=DATA_COMMENTS, post_id=None, len_comments=0):
         self.pk = pk
         self.query = query
         self.username = username

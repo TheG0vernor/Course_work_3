@@ -1,4 +1,4 @@
-from ..classes.basic import Basic
+from classes.basic import Basic
 import json
 
 

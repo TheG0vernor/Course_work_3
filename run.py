@@ -1,6 +1,6 @@
 from flask import Flask
-from Cloud.My.Course_work_3.posts.posts import posts_blueprint
-from Cloud.My.Course_work_3.search.search import search_blueprint
+from posts.posts import posts_blueprint
+from search.search import search_blueprint
 
 
 app = Flask(__name__)
