@@ -8,3 +8,5 @@ LOG_FILE = os.path.join(LOG_PATH, 'api.log')
 DATA_PATH = os.path.join(BASE_DIR, 'data')
 DATA_POSTS = os.path.join(DATA_PATH, 'data.json')
 DATA_COMMENTS = os.path.join(DATA_PATH, 'comments.json')
+
+APP_SETTINGS = 'production'
