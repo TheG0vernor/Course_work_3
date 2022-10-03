@@ -3,8 +3,8 @@ Description=Flask-app
 After=network.target
 
 [Service]
-WorkingDirectory=/home/vlysenko/
-ExecStart=/home/vlysenko/env/bin/python -m flask run -h 0.0.0.0 -p 80
+WorkingDirectory=/home/vlysenko
+ExecStart=/home/vlysenko/env/bin/python run.py -m gunicorn run:app -b 0.0.0.0:80 -w 3
 Restart=always
 
 [Install]

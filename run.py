@@ -3,11 +3,16 @@ from posts.posts import posts_blueprint
 from search.search import search_blueprint
 
 
-app = Flask(__name__)
+def config():
+    app = Flask(__name__)
+    app.config['JSON_AS_ASCII'] = False
+    app.register_blueprint(posts_blueprint)
+    app.register_blueprint(search_blueprint)
+    return app
 
-app.config['JSON_AS_ASCII'] = False
-app.register_blueprint(posts_blueprint)
-app.register_blueprint(search_blueprint)
+
+
+app = config()
 
 
 @app.errorhandler(404)  # обработка ошибки несуществующей страницы
