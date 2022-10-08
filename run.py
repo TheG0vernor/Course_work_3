@@ -11,7 +11,6 @@ def config():
     return app
 
 
-
 app = config()
 
 

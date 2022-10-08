@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  api:
+    image: vadimlysenko/hk16:version-1
+    ports:
+    - 80:80
