@@ -29,5 +29,14 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           source: "skypro/docker-compose.yaml"
-          target: "flask-app"
+          target: "hk16"
           strip_components: 1
+      - name: run docker compose
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          script: |
+            cd hk16
+            echo ${{ secrets.PASSWORD }} | sudo -S docker-compose up -d
