@@ -21,7 +21,7 @@ jobs:
       - name: render configs
         run: |
           mkdir skypro
-          cat docker-compose-ci.yaml | envsubst > skypro/docker-compose.yaml
+          cat docker-compose-server.yaml | envsubst > skypro/docker-compose.yaml
       - name: clone files to server
         uses: appleboy/scp-action@master
         with:
